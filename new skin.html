@@ -8,6 +8,7 @@
         – Bella Vita Organic</title>
         <link rel="shortcut icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/512/823/823867.png"/>
     <style>
+       
         #container{
             display:grid;
             grid-template-columns:repeat(4,1fr);
@@ -52,6 +53,22 @@
     color: #f2f2f2;
     
 }
+#login>img:hover{
+         border:1px dotted white;
+         cursor: pointer;
+    }
+    #cart>input+img:hover{
+        border:1px solid white;
+        cursor: pointer;
+    }
+    #cart>input+img+img:hover{
+        border:1px solid white;
+        cursor: pointer;
+    }
+    #container button:hover{
+        border:1px solid white;
+        cursor: pointer;
+    }
          /* footer */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
 
@@ -535,11 +552,11 @@ select{
       </div>
       
       <nav>
-        <a href="http://127.0.0.1:5500/-kind-stitch-7991/navbar.html" target="_blank">HOME</a>|
+        <a href="navbar.html" target="_blank">HOME</a>|
         <a href="">SHOP ALL</a>|
         <a href="">NEW ARRIVALS</a>|
         <a href="">BESTSELLERS</a>|
-        <a href="http://127.0.0.1:5500/-kind-stitch-7991/skincare.html">SKIN CARE</a>|
+        <a href="new skin.html">SKIN CARE</a>|
         <a href="">HAIR CARE</a>|
         <a href="">BODY CARE</a>|
         <a href="">PERFUMES</a>|
@@ -576,14 +593,16 @@ showSlide();
   </div>
 
         
-  <!-- <div id="filterbox">
+  <div id="filterbox">
     <select id="filter">
-       <option>Filter By</option>
-       <option>Name</option>
-       <option>Price</option>
-   </select> -->
-   <select id="sorting">
        <option>Sort By</option>
+       <option value="Alphabetically A-Z">Alphabetically A-Z</option>
+       <option value="Alphabetically Z-A">Alphabetically Z-A</option>
+       <option value="High to low">High to low</option>
+       <option value="low to high">low to high</option>
+   </select>
+   <select id="sorting">
+       <option>Filter By</option>
        <option value="EXFOLIATE">EXFOLIATE</option>
        <option value="ANTI ">ANTI </option>
        <option value="NICOLIPS"> NICOLIPS</option>
@@ -697,7 +716,7 @@ showSlide();
       "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Anti-AcneFaceGel-02Medium_360x.jpg?v=1659101934",
       name: "EXFOLIATE",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+300,
+      price:300,
       deleteprice:"Rs."+" "+ 320,
       btn:"ADD TO CART"
         },
@@ -706,7 +725,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/NicoBalm-02_93beb060-c566-487f-91cf-254d5f81c1e6_360x.jpg?v=1641286093",
       name: "ANTI ",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+278,
+      price:278,
       deleteprice:"Rs."+" "+300 ,
       btn:"ADD TO CART"
         },
@@ -715,7 +734,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/De-TanFacePack-02_360x.jpg?v=1652168815",
       name: "NICOLIPS",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+200,
+      price:200,
       deleteprice:"Rs."+" "+234 ,
       btn:"ADD TO CART"
         },
@@ -724,7 +743,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Anti-AcneFaceWash-02_f9aa022d-5d4e-4703-b889-7c62aa59b206_360x.jpg?v=1652182647",
       name: "EYELIFT",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+325,
+      price:325,
       deleteprice:"Rs."+" "+425 ,
       btn:"ADD TO CART"
         },
@@ -733,7 +752,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowFaceSerum-06_9d045130-dcb9-4c59-aa41-12ef9cafcdd1_360x.jpg?v=1652182969",
       name: "C-GLOW",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+545,
+      price:545,
       deleteprice:"Rs."+" "+ 769,
       btn:"ADD TO CART"
         },
@@ -742,7 +761,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DayGlow-02_360x.jpg?v=1652169110",
       name: "AYURVEDIC",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+660,
+      price:660,
       deleteprice:"Rs."+" "+ 760,
       btn:"ADD TO CART"
         },
@@ -751,7 +770,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/UbtanPlusFacePack-02_360x.jpg?v=1652083739",
       name: "NICOLIPS LIP BRIGHTENING SCRUB, 20GM WITH STROBARY",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+180,
+      price:180,
       deleteprice:"Rs."+" "+212 ,
       btn:"ADD TO CART"
         },
@@ -760,7 +779,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/2_3ce22d08-fd4b-46f4-b08b-09e23715025d_360x.jpg?v=1646825979",
       name: "ADEHRES LIP BRIGHTENING SCRUB, 20GM WITH STROBARY",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+200,
+      price:200,
       deleteprice:"Rs."+" "+223 ,
       btn:"ADD TO CART"
         },
@@ -769,7 +788,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/2_3ce22d08-fd4b-46f4-b08b-09e23715025d_360x.jpg?v=1646825979",
       name: "CHANDAN OVAT TURMERIC WITH STROWARRY, 20GM WITH STROBARY ",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+170,
+      price:170,
       deleteprice:"Rs."+" "+213 ,
       btn:"ADD TO CART"
         },
@@ -778,7 +797,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/GLOWNER-02_0cf682c0-a164-4bdf-b240-8795532c4bf8_360x.jpg?v=1652168666",
       name: "FACE CLEANSER WITH THE LEMON JIUCE, 20GM WITH STROBARY",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+321,
+      price:321,
       deleteprice: "Rs."+" "+434,
       btn:"ADD TO CART"
         },
@@ -787,7 +806,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glowey-02_360x.jpg?v=1652169511",
       name: "NICOTINS SOAP BRIGHTENING ACNE, 20GM WITH STROBARY",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+232,
+      price:232,
       deleteprice: "Rs."+" "+343,
       btn:"ADD TO CART"
         },
@@ -796,7 +815,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Celebshine-02_360x.jpg?v=1659711020",
       name: "MENOPIST LIP BRIGHTENING SCRUB, 20GM WITH STROBARY",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+545,
+      price:545,
       deleteprice:"Rs."+" "+323 ,
       btn:"ADD TO CART"
         },
@@ -805,7 +824,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-Glow-02_360x.jpg?v=1651696252",
       name: "SOAP WITH CULIFIED RBBISING SCRUB, 20GM WITH STROBARY ",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+544,
+      price:544,
       deleteprice: "Rs."+" "+564,
       btn:"ADD TO CART"
         },
@@ -814,7 +833,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glowtion-02_563c258d-147f-4a65-858b-1143f2293b0a_360x.jpg?v=1651571281",
       name: "ZEPIN SOAP RETINING BRIGHTENING SCRUB, 20GM WITH STROBARY",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+433,
+      price:433,
       deleteprice:"Rs."+" "+656 ,
       btn:"ADD TO CART"
         },
@@ -823,7 +842,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Pomegrante-02_360x.jpg?v=1651696009",
       name: "ARTIOTRIC LIP BRIGHTENING SCRUB, 20GM WITH STROBARY",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price:"Rs."+" "+232,
+      price:232,
       deleteprice:"Rs."+" "+433 ,
       btn:"ADD TO CART"
         },
@@ -832,7 +851,7 @@ showSlide();
      "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Coalwave-02_61d1abea-055a-42e4-84cb-86b5146fcd51_360x.jpg?v=1651696320",
       name: "NICOLIPS LIP BRIGHTENING SCRUB, 20GM WITH STROBARY",
       exp:"Gentle Exfoliation, Nourishing & Skin Brightening",
-      price: 332,
+      price:332,
       deleteprice: "Rs."+" "+433,
       btn:"ADD TO CART"
         },
@@ -877,8 +896,8 @@ showSlide();
       let selected=document.querySelector("#sorting").value;
       let filteredList=skinData.filter(function(element){
         return element.name==selected;
-        event.target.parentNode.remove();
-        skinData.splice(index,1)
+        // event.target.parentNode.remove();
+        // skinData.splice(index,1)
         
       })
       Display(filteredList);
@@ -886,6 +905,50 @@ showSlide();
       
       console.log(filteredList)
     }
+
+    document
+    .querySelector("#filter")
+    .addEventListener("change",sortNames);
+    function sortNames(){
+      let selected=document.querySelector("#filter").value;
+      if(selected=="Alphabetically A-Z"){
+        skinData.sort(function(a,b){
+          if (a.name > b.name) return 1;
+          if (a.name < b.name) return -1;
+          return 0;
+        });
+        Display(skinData);
+        console.log(skinData)
+      }
+      if(selected=="Alphabetically Z-A"){
+        skinData.sort(function(a,b){
+          if(a.name > b.name) return -1;
+          if(a.name < b.name) return 1;
+          return 0;
+        });
+        Display(skinData);
+      }
+      if(selected=="low to high"){
+        skinData.sort(function(a,b){
+            return Number(a.price-b.price);
+        })
+        Display(skinData)
+        console.log(skinData)
+      }
+      if(selected=="High to low"){
+        skinData.sort(function(a,b){
+            return Number(b.price-a.price);
+        })
+        Display(skinData)
+        console.log(skinData)
+      }
+
+     }
+   
+
+
+     
+     
    
 
 
@@ -902,7 +965,7 @@ function loginClick(){
 let carting=document.querySelector("#Cart").addEventListener("click",bag);
 
 function bag(){
-    window.location.href="http://127.0.0.1:5500/-kind-stitch-7991/cart1.html"
+    window.location.href="cart1.html"
     
 }
    

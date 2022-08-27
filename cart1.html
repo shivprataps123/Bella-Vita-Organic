@@ -58,6 +58,22 @@
         margin-top: 0px; 
   
     }
+    #login>img:hover{
+         border:1px dotted white;
+         cursor: pointer;
+    }
+    #cart>input+img:hover{
+        border:1px solid white;
+        cursor: pointer;
+    }
+    #cart>input+img+img:hover{
+        border:1px solid white;
+        cursor: pointer;
+    }
+    #container button:hover{
+        border:1px solid white;
+        cursor: pointer;
+    }
     .navimg{
         height:100%;
         width:33%;
@@ -89,12 +105,15 @@
         margin-left:5px;
         
     }
+   
+    
     #cart>input+img+img{
         width:15%;
         height:30px;
         margin-top: 0px;
         margin-left: 5px;
     }
+    
     .navimg>img{
         width:70px;
         height:70px;
@@ -525,11 +544,11 @@ footer#site-footer #footer-social-buttons img:hover {
         </div>
         
         <nav>
-          <a href="http://127.0.0.1:5500/-kind-stitch-7991/navbar.html" target="_blank">HOME</a>|
+          <a href="navbar.html" target="_blank">HOME</a>|
           <a href="">SHOP ALL</a>|
           <a href="">NEW ARRIVALS</a>|
           <a href="">BESTSELLERS</a>|
-          <a href="http://127.0.0.1:5500/-kind-stitch-7991/new%20skin.html">SKIN CARE</a>|
+          <a href="new skin.html">SKIN CARE</a>|
           <a href="">HAIR CARE</a>|
           <a href="">BODY CARE</a>|
           <a href="">PERFUMES</a>|
@@ -672,26 +691,19 @@ footer#site-footer #footer-social-buttons img:hover {
   
 
 
-//   let total = products.reduce(function (acc, el, i) {
-//     return acc + Number(el.price);
-//   }, 0);
-
-// //   console.log(total);
-//   document.querySelector(
-//     "#total-cost"
-//   ).innerText = `₹ ${total} including taxes`;
+ 
 let products = JSON.parse(localStorage.getItem("cart-list"));
 console.log(products);
  let count=document.querySelector("#total-items");
  count.innerText=products.length;
-// let total = products.reduce(function (acc, el, i) {
-//     return acc + Number(el.price);
-//   }, 0);
+ let total = products.reduce(function (acc, el, i) {
+     return acc + Number(el.price);
+   }, 0);
 
-//   console.log(total);
-  // document.querySelector(
-  //   "#total-cost"
-  // ).innerText = `₹ ${total} including taxes`;
+   console.log(total);
+  document.querySelector(
+    "#total-cost"
+  ).innerText = `₹ ${total} including taxes`;
  function display(data){
   document.querySelector("#container").innerHTML=null
   data.forEach(function (elem,index){
@@ -720,7 +732,8 @@ console.log(products);
        
         event.target.parentNode.remove();
         products.splice(index,1)
-        // count.innerText=products.length;
+        count.innerText=products.length;
+       
         localStorage.setItem("cart-list",JSON.stringify(products));
         console.log(products);
        
@@ -745,7 +758,7 @@ function loginClick(){
 let carting=document.querySelector("#Cart").addEventListener("click",bag);
 
 function bag(){
-    window.location.href="http://127.0.0.1:5500/-kind-stitch-7991/cart1.html"
+    window.location.href="cart1.html"
     
 }
 
