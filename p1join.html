@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/512/823/823867.png"/>
+    <style>
+            body{
+        margin: 0px;
+        padding:0px;
+        
+        
+    }
+    header{
+        position: fixed;
+        background-color: #fafafa;
+        margin-top: 0px;
+        width:100%;
+    }
+    .slide>.Slides h1{
+    color:rgb(55, 75, 21);
+    background-color: rgb(212, 248, 166);
+    text-align:center;
+    margin-top: 0px;
+    height: 60px;
+    
+}
+        /* nav */
+#nav{
+        height:80px;
+        width:80%;
+        border:0px solid red;
+        display:flex; 
+       justify-content:space-evenly ;
+       margin: auto;
+     
+ 
+    }
+    #login{
+        height:100%;
+        width:20%;
+        border:0px solid blue;
+        
+
+    }
+    #login>img{
+        height:40px;
+        width:40px; 
+        margin-top: 0px; 
+  
+    }
+    .navimg{
+        height:100%;
+        width:33%;
+        border:0px solid black;
+       padding-left: 50px;
+       display: flex;
+      
+    }
+    #cart{
+        height:100%;
+        width:30%;
+        border:0px solid blue;
+        display: flex;
+        margin-left: 20px;
+    }
+    #cart>input{
+        height:30px;
+        width:100%;
+        border:1px solid rgb(34, 15, 15);
+        border-radius: 5px;
+        font-size: 18px;
+        color:black
+
+    }
+    #cart>input+img{
+        width:15%;
+        height:30px;
+        margin-top: 0px;
+        margin-left:5px;
+        
+    }
+    #cart>input+img+img{
+        width:15%;
+        height:30px;
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+    .navimg>img{
+        width:70px;
+        height:70px;
+        margin-top: 0px;
+        
+    }
+    nav>a{
+        text-decoration: none;
+        color:rgb(101, 141, 31);
+        font-size: small;
+        padding-left:10px
+      
+        
+    }
+    nav>a:hover{
+        font-size: large;
+        text-decoration: underline;
+    }
+    nav{
+        text-align: center;
+       
+    }
+        #logo{
+            height:100px;
+            width:100px;
+            display:block;
+            margin:auto;
+             /* margin-top:40px  */
+     } 
+       #box{
+        height:500px;
+        width:35%;
+        border:0px solid red;
+        margin:auto;
+        margin-top:180px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        border-radius: 10px;
+       }
+       form{
+        margin-left:30px;
+        margin-top:30px;
+       }
+       form>input{
+        height:40px;
+        width:90%;
+        margin:auto;
+        margin-top:20px;
+        margin-bottom: 20px;
+        border-radius: 7px;
+        border:1px solid rgb(204, 197, 197);
+        
+       }
+       form>label{
+        padding-bottom:10px;
+        color:rgb(34, 30, 30);
+        font-size:18px
+       }
+       input[type="submit"]{
+        width:91%;
+        color:aliceblue;
+        border:none;
+        background-color: rgb(114, 231, 114);
+        font-size: 20px;
+
+       }
+       /* p{
+        color:grey;
+        
+       } */
+       #box>h2{
+        text-align: center;
+        font-weight: bold;
+        padding-top: 15px;
+       }
+       form+p{
+        text-align: center;
+        color:black;
+        font-size: 20px;
+        
+       }
+     form+p a{
+        font-weight: lighter;
+        color:rgb(92, 238, 92);
+        text-decoration: none;
+      }
+      div+p{
+        font-size:20px;
+        text-align: center;
+      }
+      form>#GOOGLE{
+        text-align: center;
+        background-color: rgb(250, 153, 153);
+        color: aliceblue;
+        font-size: 20px;
+      }
+      form>#GOOGLE:hover{
+        cursor: pointer;
+      }
+       /* footer */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    background: #fafafa;
+    font-family: "Open Sans", "Noto Sans", "HelveticaNeueCyr", Helvetica, sans-serif;
+    font-size: 11pt;
+
+}
+
+footer#site-footer {
+     margin: 0 ; 
+    width: 100%;
+    background:rgba(199, 255, 182, 0.904);
+    padding: 1rem;
+    color: black;
+    margin-bottom: 0px;
+
+}
+
+footer#site-footer a {
+    color:black
+}
+
+footer#site-footer a:hover {
+    color: #00c3ce;
+}
+
+
+footer#site-footer section.horizontal-footer-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 2.38rem 2rem;
+}
+
+footer#site-footer section.horizontal-footer-section#footer-top-section {
+    justify-content: center;
+}
+
+footer#site-footer #footer-logo {
+    margin-right: auto;
+    flex-shrink: 0;
+}
+
+footer#site-footer #footer-logo img {
+    height: 2.28rem;
+}
+
+footer#site-footer ul#footer-top-menu {
+    padding: 0;
+    margin: 0;
+}
+
+footer#site-footer ul#footer-top-menu li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 1.32rem;
+    font-weight: bold;
+}
+
+footer#site-footer ul#footer-top-menu li a {
+    text-decoration: none;
+}
+
+footer#site-footer .footer-top-menu-item-active {
+    position: relative;
+}
+
+footer#site-footer .footer-top-menu-item-active a {
+    color: #007ba6;
+}
+
+footer#site-footer .footer-top-menu-item-active a:hover {
+    color: #00c3ce;
+}
+
+footer#site-footer .footer-top-menu-item-active::before {
+    content: "";
+    background: #007ba6;
+    padding: 0.15rem 0;
+    width: 100%;
+    position: absolute;
+    top: 1.68em;
+}
+
+footer#site-footer .footer-top-menu-item-active:hover::before {
+    background: #00c3ce;
+    transition-duration: 0.6s;
+}
+
+footer#site-footer #footer-buttons-container {
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+footer#site-footer a.footer-button {
+    background: transparent;
+    border: 0.15rem solid #a8a8a8;
+    border-radius: 1.38rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer#site-footer a.footer-button:hover {
+    border-color: #00c3ce;
+}
+
+footer#site-footer section.horizontal-footer-section#footer-middle-section {
+    align-items: flex-start;
+    
+}
+
+footer#site-footer .footer-columns {
+    flex-basis: 18%;
+    padding-right: 1rem;
+}
+
+footer#site-footer .footer-columns-large {
+    flex-basis: 46%;
+    padding-right: 2rem;
+}
+
+footer#site-footer .footer-columns h1 {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+footer#site-footer .footer-columns.footer-columns-large h1 {
+    font-size: 1.28rem;
+    margin-top: 3rem;
+    margin-bottom: 1.32rem;
+}
+
+footer#site-footer .footer-columns.footer-columns-large h1:first-child {
+    margin-top: 0;
+}
+
+footer#site-footer ul.footer-column-menu {
+    margin: 0;
+    padding: 0;
+}
+
+footer#site-footer ul.footer-column-menu li {
+    list-style-type: none;
+    margin-bottom: 0.68rem;
+    font-size: 0.88rem;
+}
+
+footer#site-footer #footer-about address {
+    font-style: normal;
+    font-weight: bold;
+}
+
+footer#site-footer #footer-about address p img {
+    margin-right: 0.68rem;
+}
+
+footer#site-footer #footer-about a.footer-button {
+    margin-top: 0.32rem;
+}
+
+footer#site-footer section.horizontal-footer-section#footer-bottom-section {
+    padding: 1.32rem 0;
+    margin: 2rem 2rem 1.32rem 2rem;
+    border-top: 0.05rem solid #666666;
+}
+
+footer#site-footer #footer-social-buttons {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+footer#site-footer #footer-social-buttons img {
+    margin-left: 0.68rem;
+}
+
+footer#site-footer #footer-social-buttons img:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media screen and (max-width: 959px) {
+
+    footer#site-footer {
+        width: 100%;
+    }
+
+    footer#site-footer section.horizontal-footer-section {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    footer#site-footer section.horizontal-footer-section div {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    footer#site-footer ul li {
+        display: block !important;
+        padding: 1em !important;
+        border-top: 1px solid #555555;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        font-size: 1.15rem !important;
+    }
+
+    footer#site-footer ul li:first-child {
+        border-top: none;
+    }
+
+    footer#site-footer a.footer-button {
+        display: block;
+        text-align: center;
+        max-width: 350px;
+        margin: 0.32rem auto;
+    }
+
+    footer#site-footer section.horizontal-footer-section#footer-top-section div {
+        margin-top: 0;
+        margin-bottom: 1.68rem;
+    }
+
+    footer#site-footer #footer-logo {
+        margin-right: 0;
+    }
+
+    footer#site-footer #footer-buttons-container {
+        margin-left: 0;
+    }
+
+    footer#site-footer ul#footer-top-menu {
+        width: 100%;
+        margin: 2rem 0 0 0;
+    }
+
+    footer#site-footer .footer-top-menu-item-active::before {
+        display: none;
+    }
+
+    footer#site-footer #footer-about {
+        margin-bottom: 3rem;
+    }
+
+    footer#site-footer .footer-columns-large,
+    footer#site-footer .footer-columns {
+        padding-right: 0;
+    }
+
+    footer#site-footer .footer-columns {
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
+
+    footer#site-footer .footer-columns:last-child {
+        margin-bottom: 0;
+    }
+
+    footer#site-footer .footer-columns h1 {
+        text-align: center;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15rem;
+    }
+
+    footer#site-footer ul.footer-column-menu li {
+        margin-bottom: 0;
+        display: block;
+        text-align: center;
+    }
+
+    footer#site-footer section#footer-bottom-section div {
+        text-align: center;
+    }
+
+    footer#site-footer section.horizontal-footer-section#footer-bottom-section {
+        margin: 1.32rem 0;
+        padding: 0;
+        border-top: 0;
+    }
+
+    footer#site-footer section#footer-bottom-section #footer-social-buttons {
+        margin-top: 1.32rem;
+    }
+  
+}
+#logfot{
+  height:100px;
+  width:100%;
+}
+
+      
+    </style>
+</head>
+<body>
+    
+    <header>
+        
+        <div class="slide">
+
+            <div class="Slides">
+              <h1>Buy Any Four Products by The Price of 3! Code-4FOR3</h1>
+            </div>
+            
+            <div class="Slides">
+              <h1>Flexi-Box Buy Any Four Products at Rs 999<b>Shop Now</b></h1>
+            </div>
+            
+            <div class="Slides">
+             <h1>Free Shipping on Prepaid Orders*</h1>
+            </div>
+            </div>
+            <div>
+                <span style="background-color:white" class="dot"></span> 
+                <span style="background-color:white" class="dot"></span> 
+                <span style="background-color:white" class="dot"></span> 
+              </div>
+              <div id="nav">
+                <div id="login">
+                    <img id="logimg" src="https://cdn-icons-png.flaticon.com/512/3711/3711267.png"/>
+                </div>
+               
+          <div class="navimg">
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVO_220_x_220_480x.png?v=1653304683" alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Brave_220_x_220_480x.png?v=1653304701" alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVL_220_x_220_480x.png?v=1653304721" alt="">
+          </div>
+          <div id="cart">
+           <input type="text" placeholder="Search for Products" >
+            <img id="Cart" src="https://cdn-icons-png.flaticon.com/512/1136/1136140.png"/>
+            <img src="https://cdn-icons-png.flaticon.com/512/2589/2589175.png"/> 
+          </div>
+          </div>
+          
+          <nav>
+            <a href="http://127.0.0.1:5500/-kind-stitch-7991/navbar.html" target="_blank">HOME</a>|
+            <a href="">SHOP ALL</a>|
+            <a href="">NEW ARRIVALS</a>|
+            <a href="">BESTSELLERS</a>|
+            <a href="http://127.0.0.1:5500/-kind-stitch-7991/new%20skin.html">SKIN CARE</a>|
+            <a href="">HAIR CARE</a>|
+            <a href="">BODY CARE</a>|
+            <a href="">PERFUMES</a>|
+            <a href="">COMBOS</a>|
+            <a href="">BUILD A BOX</a>
+           
+          </nav>
+          <hr>
+        </header>
+
+        <script>
+            let slideIndexes = 0;
+   showSlide();
+   
+       function showSlide() {
+           let i;
+           let slides = document.getElementsByClassName("Slides");
+           let dots = document.getElementsByClassName("dot");
+           for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+           }
+           slideIndexes++;
+           if (slideIndexes > slides.length) {slideIndexes = 1}    
+           for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndexes-1].style.display = "block";  
+           dots[slideIndexes-1].className += " active";
+           setTimeout(showSlide, 2000); // Change image every 2 seconds
+         }</script>
+       
+
+    <img id="logo" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVL_220_x_220_480x.png?v=1653304721"/>
+   <div id="box">
+    <h2>Login</h2>
+       <form>
+       
+        <label for="">Email</label></br>
+        <input id="email" type="email" placeholder="Enter email"></br>
+        <label for="">Password</label></br>
+        <input id="password" type="password" placeholder="Enter password">
+       
+        <input type="submit" placeholder="Sign In">
+        <input id="GOOGLE" type="NAME" placeholder="CONTINUE WITH GOOGLE">
+       </form>
+       <p>Dont't have any account?<a href="http://127.0.0.1:5500/-kind-stitch-7991/signup.html" target="_blank" >Sign Up</a></p>
+    </div>
+
+    <div id="logfot"></div>
+    <footer id="site-footer">
+
+
+   
+
+      <section class="horizontal-footer-section" id="footer-middle-section">
+          <div id="footer-about" class="footer-columns footer-columns-large">
+              <h1>Contact Us</h1>
+              <address>
+                  <p><img src="https://img.icons8.com/ios-filled/14/eeeeee/marker.png">Office Location: Plot no.417, Udyog Vihar, Haryana,India</p>
+                  <p><img src="https://img.icons8.com/ios-filled/14/eeeeee/phone.png">+91 9311732440</p>
+                  <p><img src="https://img.icons8.com/ios-filled/14/eeeeee/mail.png">shop@bellavitaorganic.com</p>
+                  <p><img src="https://img.icons8.com/ios-filled/14/eeeeee/clock.png">Timing:9:00 AM To 9:00 PM, Monday To Sunday</p>
+              </address>
+             
+          </div>
+          <div class="footer-columns">
+              <h1>ONLINE PRESENCE</h1>
+              <ul class="footer-column-menu" role="menu">
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="https://www.amazon.in/" class="footer-column-menu-item-link">Amazon</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="https://www.nykaafashion.com/" class="footer-column-menu-item-link">Nykaa</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="https://www.flipkart.com/" class="footer-column-menu-item-link">Flipkart</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="#" class="footer-column-menu-item-link">TataCliq</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                    <a href="#" class="footer-column-menu-item-link">Snapdeal</a>
+                </li>
+              </ul>
+          </div>
+          <div class="footer-columns">
+              <h1>SUPPORT</h1>
+              <ul class="footer-column-menu" role="menu">
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="https://bellavitaorganic.com/pages/philosophy" class="footer-column-menu-item-link">About Us</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="https://bellavitaorganic.com/pages/contact-us" class="footer-column-menu-item-link">Contact Us</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="https://bellavitaorganic.com/pages/order-tracking" class="footer-column-menu-item-link">Order Tracking</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="https://bellavitaorganic.com/collections/natural-ayurvedic-beauty-care-products" class="footer-column-menu-item-link">All Products</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="https://bellavitaorganic.com/pages/frequently-asked-questions" class="footer-column-menu-item-link">FAQ</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="footer-columns">
+              <h1>INFORMATION</h1>
+              <ul class="footer-column-menu" role="menu">
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="https://bellavitaorganic.com/blogs/bellavita-blogs" class="footer-column-menu-item-link">Blogs</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="https://bellavitaorganic.com/blogs/news-media" class="footer-column-menu-item-link">Newsroom</a>
+                  </li>
+                  <li class="footer-column-menu-item">
+                      <a href="https://bellavitaorganic.com/pages/terms-and-conditions" class="footer-column-menu-item-link" role="menuitem">Term & Conditions</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="https://bellavitaorganic.com/pages/privacy-policy" class="footer-column-menu-item-link">Privacy and Policy</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                      <a href="https://bellavitaorganic.com/pages/refund-and-return" class="footer-column-menu-item-link">Refund and Return</a>
+                  </li>
+                  <li class="footer-column-menu-item" role="menuitem">
+                    <a href="https://bellavitaorganic.com/pages/shipping-policy" class="footer-column-menu-item-link">Shipping Policy</a>
+                </li>
+              </ul>
+          </div>
+      </section>
+      
+      <section class="horizontal-footer-section" id="footer-bottom-section">
+         
+          <div id="footer-social-buttons">
+              <img src="https://img.icons8.com/ios-filled/25/999999/facebook--v1.png"/>
+              <img src="https://img.icons8.com/ios-filled/25/999999/telegram-app.png"/>
+              <img src="https://img.icons8.com/ios-filled/25/999999/pinterest--v1.png"/>
+              <img src="https://img.icons8.com/ios-filled/25/999999/instagram--v1.png"/>
+          </div>
+      </section>
+  
+  </footer>
+  
+   
+   
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",signin);
+    function signin(){
+        event.preventDefault();
+        // console.log(event.target.innerText)
+        let gmait=document.querySelector("#email").value;
+        let passw=document.querySelector("#password").value;
+        let obje=JSON.parse(localStorage.getItem("signupdetails"));
+        // console.log(obje[2])
+       
+        if(gmait==obje[1].email && passw==obje[2].password){
+            alert("login successfull")
+            window.location.href="navbar.html"
+        
+        }else {
+            alert("wrong credentials")
+        }
+        
+
+    }
+    
+let log=document.querySelector("#logimg").addEventListener("click",loginClick);
+function loginClick(){
+    window.location.href="signup.html"
+}
+let carting=document.querySelector("#Cart").addEventListener("click",bag);
+
+function bag(){
+    window.location.href="http://127.0.0.1:5500/-kind-stitch-7991/cart1.html"
+    
+}
+
+    
+    
+    
+</script>
